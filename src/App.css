@@ -1,0 +1,55 @@
+#titulo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#body{
+  background: black;
+  height: 90vh;
+}
+
+#cuerpotarjeta{
+  width: 100px;
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+}
+
+
+#basurita{
+display: inline-block;
+justify-content: end;
+color: red;
+}
+
+li #basurita{
+  display: none;
+}
+
+li:hover #basurita{
+  display: block;
+}
+
+h1{
+  color: peachpuff;
+  font-family: 'Indie Flower', cursive;;
+}
+li{
+  font-family: 'Indie Flower', cursive;;
+  font-size: 50px;
+}
+input[type="text"]{
+  height: 40px;
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;;
+}
