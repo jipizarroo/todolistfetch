@@ -65,6 +65,22 @@ class App extends React.Component {
         this.setState({
             notas: notas
         })
+        fetch("https://assets.breatheco.de/apis/fake/todos/user/tombollini",{
+            method: 'PUT',
+            body: JSON.stringify(notas),
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        })
+        .then(resp => resp.json())
+        .then(data => {
+            console.log(data);
+            this.setState({
+                msg: data
+            });
+        })
+        .catch(error => console.log(error));
+        
 
     }
 
